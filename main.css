@@ -1,0 +1,239 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    background-color: #e6e6e6;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img{
+    border-radius: 10px;
+}
+
+h2{
+    padding-bottom: 10px;
+    font-style: italic;
+    border-bottom: 4px solid rgb(81, 133, 247);
+}
+
+h2, h3{
+    color: rgb(81, 133, 247);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px;
+    border-bottom: 1px solid black;
+    margin-bottom: 56px;
+    background-color: rgb(81, 133, 247);
+    color: #fff;
+}
+
+header h1{
+    font-style: italic;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.container-flex{
+    display: flex;
+}
+
+#sobreLoja img{
+    margin: 0 24px 24px 0;
+}
+
+section h2{
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 24px 0;
+}
+
+.listaProdutos{
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    column-gap: 2.7%;
+    row-gap: 5%;
+    list-style: none;
+}
+
+.listaProdutos img{
+    max-width: 100%;
+}
+
+.listaProdutos h3, p{
+    margin: 10px 0;
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    padding: 8px 0;
+    border: none;
+    background-color: rgb(81, 133, 247);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.form-campo{
+    margin-bottom: 16px;
+}
+
+.form-campo label{
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input{
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+form{
+    max-width: 360px;
+}
+
+form button{
+    max-width: 120px;
+}
+
+footer li{
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img{
+    height: 32px;
+}
+
+footer{
+    border-top: 1px solid black;
+    padding-bottom: 16px;
+    background-color: rgb(81, 133, 247);
+    padding-top: 16px;
+    color: #fff;
+}
+
+footer .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container{
+        display: block;
+        max-width: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sobreLoja img{
+        max-width: 100%;
+        margin-bottom: 24px;
+    }
+
+    .produtos{
+        margin-left: 10px;
+        display: block;
+        margin-bottom: 32px;
+        max-width: 90%;
+    }
+
+    .listaProdutos{
+        display:block;
+        max-width: 90%;
+        justify-content: space-between;
+        margin-left: 24px;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    button{
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    
+    
+    .container{
+        display: block;
+        max-width: 90%;
+        align-items: center;
+    }
+
+    #sobreLoja {
+        display: flex;
+        
+    }
+
+    .produtos{
+        margin-left: 10px;
+        display: block;
+        max-width: 90%;
+    }
+
+    .produtos h2{
+        align-items: center;
+    }
+
+    .listaProdutos{
+        display:grid;
+        max-width: 90%;
+        margin-left: 24px;
+        grid-template-columns: repeat(2, 47%);
+        column-gap: 2.7%;
+        row-gap: 5%;
+    }
+
+    aside{
+        padding-left: 0;
+    }
+
+    header div.container{
+        flex-direction: column;
+    }
+
+    button{
+        margin-bottom: 10px;
+    }
+
+}
